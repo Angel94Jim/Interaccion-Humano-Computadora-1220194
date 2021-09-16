@@ -7,7 +7,7 @@ public class Problema1 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("Hola mundo Cruel y Despiadado");
+        Debug.Log("Hola Mundo Cruel y Despiadado");
 
         int[] nums = new int[] {8,1,2,3,4};
 
