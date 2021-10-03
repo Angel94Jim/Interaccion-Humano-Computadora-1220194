@@ -5,7 +5,8 @@ using UnityEngine;
 public class Interactable : MonoBehaviour
 {
     private bool insideInteractionZone = false;
-    
+    public bool canBeSaved = true;
+    public Item inventoryItem;
     public virtual void Interact()
     {
         Debug.Log("Interactuando");
@@ -13,9 +14,20 @@ public class Interactable : MonoBehaviour
 
     void Update()
     {
-        if (insideInteractionZone && Input.GetKeyDown(KeyCode.I))
+        if (insideInteractionZone)
         {
-            Interact();
+            if (Input.GetKeyDown(KeyCode.I))
+            {
+                Interact();
+            }
+            else if (canBeSaved && Input.GetKeyDown(KeyCode.E))
+            {
+                if (inventoryItem != null)
+                {
+                    Inventory.Instance.Add(inventoryItem);
+                    Destroy(gameObject);
+                }
+            }
         }
     }
 
@@ -24,17 +36,15 @@ public class Interactable : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             Debug.Log("Entró a el area");
-            insideInteractionZone= true;    
+            insideInteractionZone = true;
         }
     }
-
     void OnTriggerExit(Collider other)
     {
         if (other.CompareTag("Player"))
         {
             Debug.Log("Salió del area");
-            insideInteractionZone= false;  
+            insideInteractionZone = false;
         }
     }
-
 }
