@@ -10,11 +10,8 @@ public class Inventory : MonoBehaviour
     public delegate void OnChange();
     public OnChange onChange;
     public List<Item> items = new List<Item>();
-    public int space = 10;
+    public int space = 8;
 
-    /// <summary>
-    /// Awake is called when the script instance is being loaded.
-    /// </summary>
     void Awake()
     {
         _instance = this;

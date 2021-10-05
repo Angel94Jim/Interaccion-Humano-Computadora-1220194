@@ -2041,6 +2041,17 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &614674880 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6981641976672794059, guid: 1fcf8e019850a9d43811d44c4b37ad9c, type: 3}
+  m_PrefabInstance: {fileID: 6981641975917129786}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 680fdf5967693494bba119eb5ae531db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &615896375 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 490584, guid: b0f7abaadca23ea4d910efe028624076, type: 3}
@@ -4582,8 +4593,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95c6dbdf155b55e47a76024357e5c7da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  items:
-  - {fileID: 0}
+  items: []
   space: 8
 --- !u!1001 &1473396366
 PrefabInstance:
@@ -6592,7 +6602,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canBeSaved: 1
-  inventoryItem: {fileID: 0}
+  inventoryItem: {fileID: 11400000, guid: e001a432127ece0428031d2910453347, type: 2}
 --- !u!82 &2099432674
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7035,6 +7045,18 @@ PrefabInstance:
       propertyPath: cursorLocked
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8616685848737228371, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
+      propertyPath: MoveSpeed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8616685848737228371, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
+      propertyPath: JumpHeight
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8616685848737228371, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
+      propertyPath: SprintSpeed
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 8616685848737228372, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
       propertyPath: m_Name
       value: PlayerCapsule
@@ -7260,14 +7282,26 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6981641976672794058, guid: 1fcf8e019850a9d43811d44c4b37ad9c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 614674880}
+    - target: {fileID: 6981641976672794058, guid: 1fcf8e019850a9d43811d44c4b37ad9c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: UseItem
+      objectReference: {fileID: 0}
+    - target: {fileID: 6981641976672794058, guid: 1fcf8e019850a9d43811d44c4b37ad9c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: InventorySlot, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 6981641976672794059, guid: 1fcf8e019850a9d43811d44c4b37ad9c, type: 3}
       propertyPath: item
       value: 
-      objectReference: {fileID: 11400000, guid: 6b7a322aeb8f4d34ab8828401be7d401, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 6981641976672794068, guid: 1fcf8e019850a9d43811d44c4b37ad9c, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 716187651507184709, guid: 8e45018d45fcc7a47bca18193b8fa852, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 6981641976672794071, guid: 1fcf8e019850a9d43811d44c4b37ad9c, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0

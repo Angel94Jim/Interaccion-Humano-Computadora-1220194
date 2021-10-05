@@ -4,6 +4,7 @@ using StarterAssets;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "Herb", menuName = "Inventory/Herb")]
+ 
 public class Herb : Item
 {
     public float lifeGain;
