@@ -3,15 +3,20 @@ using System.Collections.Generic;
 using StarterAssets;
 using UnityEngine;
 
+//[CreateAssetMenu(fileName = "Sword", menuName = "Inventory/Equipment/Key")]
+
 [CreateAssetMenu(fileName = "RustyKey", menuName = "Inventory/RustyKey")]
 public class RustyKey : Item
 {
-   
-    private FirstPersonController _player;
+     public GameObject prefabToSpawn; 
+     private FirstPersonController _player;
 
     public override void Use()
     {
         base.Use();
-        // respawn del objeto...
+        _player = FindObjectOfType<FirstPersonController>();
+
+         Vector3 offset = new Vector3(1f, 1f, 1f);
+        Instantiate(prefabToSpawn, _player.transform.position + offset, Quaternion.identity);  
     }
 }

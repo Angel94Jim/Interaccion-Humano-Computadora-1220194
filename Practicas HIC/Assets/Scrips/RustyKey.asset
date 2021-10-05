@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 581b697751a512d46958139bc46c8b5d, type: 3}
   m_Name: RustyKey
   m_EditorClassIdentifier: 
-  inventoryIconSprite: {fileID: 1792611577289806342, guid: 8e45018d45fcc7a47bca18193b8fa852, type: 3}
+  inventoryIconSprite: {fileID: -2473144865797625651, guid: 8e45018d45fcc7a47bca18193b8fa852, type: 3}
+  prefabToSpawn: {fileID: 374289202576707483, guid: 78df1db2fbc8ec64f949fac0c05bf693, type: 3}
