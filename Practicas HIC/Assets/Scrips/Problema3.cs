@@ -41,7 +41,7 @@ public class Problema3 : MonoBehaviour
             GSum=Math.Max(sum, GSum); //Guardamos en Gsum el num mayor dado entre sum y el valor de Gsum
             /*/
                 Math.max() es una función que devuelve el valor mayor 
-                de una lista de valores numéricos pasados como parámetros.  x=Math.max(1.4), x=4
+                de una lista de valores numéricos pasados como parámetros.  x=Math.max(1,4), x=4
                 sum=-2,Gsum=-2.
                 i=1; sum=1, Gsum=1;
                 i=2; sum=-2, Gusm=1;
